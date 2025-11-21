@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Whole-Body Inverse Dynamics MPC for Legged Loco-Manipulation">
+  <meta name="keywords" content="Legged Robots, Mobile Manipulation, Whole-Body Motion Planning and Control">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Whole-Body Inverse Dynamics MPC for Legged Loco-Manipulation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/crl.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Whole-Body Inverse Dynamics MPC for Legged Loco-Manipulation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+                <a href="https://ch.linkedin.com/in/lukas-molnar-b2b656227">Lukas Molnar</a>,</span>
+            <span class="author-block">
+              <a href="https://jin-cheng.me">Jin Cheng</a>,</span>
+            <span class="author-block">
+              <a href="https://www.zhaw.ch/en/about-us/person/fadi">Gabriele Fadini</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://donghok.me">Dongho Kang</a>,</span>
+            <span class="author-block">
+              <a href="https://fatemehzargar.com/">Fatemeh Zargarbashi</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://crl.ethz.ch/people/coros/index.html">Stelian Coros</a>
+            </span>
+          </div>
+
+          <div class="column is-narrow has-text-centered" style="margin: 0.5cm auto; width: 250px;">
+            <img src="./static/images/eth.svg" alt="ETH Zurich Logo" class="logo-eth">
+          </div>
+
+          <div class="is-size-4 publication-authors" style="margin-bottom: 0.1cm;">
+            Accepted to <a href="https://www.ieee-ras.org/publications/ra-l">IEEE Robotics and Automation Letters, </a>
+          </div>
+
+          <div class="is-size-4 publication-authors" style="margin-bottom: 0.5cm;">
+            <a href="https://www.ieee-ras.org/publications/ra-l/special-issues/current-special-issues/cfp-advancements-in-mpc-and-learning-algorithms-for-legged-robots">
+            Special Issue: Advancements in MPC and Learning Algorithms for Legged Robots</a>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?si=KAlqRhV4Uy8Myctk&v=kBXusIEfDmc&feature=youtu.be"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/lukasmolnar/pino-locoman"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+  width: 95%;
+  height: 95%;
+  border: 0;
+}
+</style>
+
+<div class="video-wrapper">
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kBXusIEfDmc?si=OseQkAxBo5qH7_Cb"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<div class="abstract-box mt-5">
+  <h2 class="title is-3 has-text-centered">Abstract</h2>
+  <div class="content has-text-justified">
+    <p>Loco-manipulation demands coordinated whole-body motion to manipulate objects effectively while maintaining locomotion stability, presenting significant challenges for both planning and control. In this work, we propose a whole-body model predictive control (MPC) framework that directly optimizes joint torques through full-order inverse dynamics, enabling unified motion and force planning and execution within a single predictive layer. This approach allows emergent, physically consistent whole-body behaviors that account for the system’s dynamics and physical constraints.
+    <p>We implement our MPC formulation using open software frameworks (Pinocchio and CasADi), along with the state-of-the-art interior-point solver Fatrop. In real-world experiments on a Unitree B2 quadruped equipped with a Unitree Z1 manipulator arm, our MPC formulation achieves real-time performance at 80 Hz. We demonstrate loco-manipulation tasks that demand fine control over the end-effector’s position and force to perform real-world interactions like pulling heavy loads, pushing boxes, and wiping whiteboards.</p>
+  </div>
+</div>
+
+<div class="pipeline-overview section">
+  <h2 class="title is-3 has-text-centered"> Overview</h2>
+  <div class="container is-max-desktop has-text-justified">
+    <div class="has-text-centered" style="margin-bottom: 1cm;">
+      <img src="./static/images/pipeline-website.svg" alt="Pipeline Diagram" class="pipeline-diagram">
+    </div>
+    <p class="mb-5">
+  Overview of the whole-body MPC pipeline. The MPC directly optimizes over joint torques by enforcing full-order inverse dynamics through the Recursive Newton-Euler Algorithm (RNEA).
+  The MPC runs at 80 Hz using the interior-point solver Fatrop, which exploits the block-sparse structure of stage-wise constraints.
+  The resulting torque solution is interpolated at 500 Hz and passed directly to the motors, along with PD feedback for the joint positions and velocities.
+ </p>
+  </div>
+</div>
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="text-align: center; padding-bottom: 10px;">Simulation</h2>
+        <tr>
+          <td>
+
+            <div class="columns"> <!-- Correct Bulma structure -->
+              <div class="column">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Whole-body adaptability</h3>
+                <video autoplay muted loop playsinline controls src="./static/videos/sim_arm_spiral.mp4" width="100%" style="border-radius:10px;"></video>
+                <!-- <img src="./static/images/arm_tracking.png" alt="Whole-body adaptability" class="sim-image1"> -->
+              </div>
+              <div class="column">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Disturbance rejection</h3>
+                <video autoplay muted loop playsinline controls src="./static/videos/sim_disturbance.mp4" width="100%" style="border-radius:10px;"></video>
+                <!-- <img src="./static/images/base_disturbance.png" alt="Disturbance rejection" class="sim-image2"> -->
+              </div>
+            </div>
+            <br>
+
+          </td>
+        </tr>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="text-align: center; padding-bottom: 10px;">Hardware</h2>
+        <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Whole-body pulling (>2x the rated arm limit)</h3>
+        <tr>
+          <td>
+
+            <div class="columns"> <!-- Correct Bulma structure -->
+              <div class="column">
+                <video autoplay muted loop playsinline controls src="./static/videos/standing_trimmed.mp4" width="100%" style="border-radius:10px;"></video>
+                <!-- <img src="./static/images/standing_pulling.png" alt="Pulling standing" class="hw-image1"> -->
+              </div>
+              <div class="column">
+                <video autoplay muted loop playsinline controls src="./static/videos/trotting_trimmed.mp4" width="100%" style="border-radius:10px;"></video>
+                <!-- <img src="./static/images/walking_pulling.png" alt="Pulling walking" class="hw-image2"> -->
+              </div>
+            </div>
+            <br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+
+            <div class="columns"> <!-- Correct Bulma structure -->
+              <div class="column">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Box pushing</h3>
+                <video autoplay muted loop playsinline controls src="./static/videos/box_trimmed.mp4" width="100%" style="border-radius:10px;"></video>
+                <!-- <img src="./static/images/box_pushing.png" alt="Pulling standing" class="hw-image1"> -->
+              </div>
+              <div class="column">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Board wiping</h3>
+                <video autoplay muted loop playsinline controls src="./static/videos/wipe_trimmed.mp4" width="100%" style="border-radius:10px;"></video>
+                <!-- <img src="./static/images/compliance_down.png" alt="Pulling walking" class="hw-image2"> -->
+              </div>
+            </div>
+            <br>
+          </td>
+        </tr>
+        <tr>
+          <div class="columns is-centered"> <!-- Correct Bulma structure -->
+            <div class="column is-narrow has-text-centered" style="max-width: 800px;">
+              <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Compliance</h3>
+              <video autoplay muted loop playsinline controls src="./static/videos/compliance_trimmed.mp4" width="100%" style="border-radius:10px;"></video>
+            </div>
+          </div>
+        </tr>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code id="bib"></code></pre>
+  </div>
+</section>
+<script>
+  const bibtex = ``;
+  document.getElementById("bib").innerText = bibtex;
+</script>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <!-- <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a> -->
+    </div>
+    <div class="lab-logos">
+      <img src="./static/images/CRL-Logo2.svg" alt="CRL" class="lab-logo">
+    </div>
+
+    <hr style="width: 60%; margin: 2rem auto;">
+
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is inspired by the <a href="https://nerfies.github.io">Nerfies</a> website, which is
+            licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">
+            Creative Commons Attribution 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
