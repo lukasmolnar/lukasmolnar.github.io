@@ -160,9 +160,10 @@
       <img src="./static/images/pipeline-website.svg" alt="Pipeline Diagram" class="pipeline-diagram">
     </div>
     <p class="mb-5">
-  Overview of the whole-body MPC pipeline. The MPC directly optimizes over joint torques by enforcing full-order inverse dynamics through the Recursive Newton-Euler Algorithm (RNEA).
-  The MPC runs at 80 Hz using the interior-point solver Fatrop, which exploits the block-sparse structure of stage-wise constraints.
-  The resulting torque solution is interpolated at 500 Hz and passed directly to the motors, along with PD feedback for the joint positions and velocities.
+  The whole-body MPC directly optimizes joint torques by enforcing full-order inverse dynamics through the Recursive Newton-Euler Algorithm (RNEA).
+  It runs at 80 Hz using the interior-point solver Fatrop, which exploits the block-sparse structure of stage-wise constraints.
+  The resulting torque commands are interpolated at 500 Hz and passed directly to the motors, along with PD feedback on joint positions and velocities (only required on hardware).
+  This yields a simple and unified control pipeline that does not require a separate low-level whole-body controller to ensure dynamic feasibility.
  </p>
   </div>
 </div>
@@ -176,7 +177,7 @@
 
             <div class="columns"> <!-- Correct Bulma structure -->
               <div class="column">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Whole-body adaptability</h3>
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Adaptive end-effector tracking</h3>
                 <video autoplay muted loop playsinline controls src="./static/videos/sim_arm_spiral.mp4" width="100%" style="border-radius:10px;"></video>
                 <!-- <img src="./static/images/arm_tracking.png" alt="Whole-body adaptability" class="sim-image1"> -->
               </div>
